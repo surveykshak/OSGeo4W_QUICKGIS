@@ -41,8 +41,8 @@ my $signwith;
 my $signpass;
 my $help;
 my $manufacturer = "QUICKGIS.org";
-my $background;
-my $banner;
+my $background = "banner_large_3.44.8.bmp";
+my $banner = "banner_small.bmp";
 my $arpicon;
 
 my $BASEDIR = dirname(__FILE__);
