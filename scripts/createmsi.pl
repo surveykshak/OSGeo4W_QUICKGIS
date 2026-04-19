@@ -41,7 +41,7 @@ my $signwith;
 my $signpass;
 my $help;
 my $manufacturer = "QUICKGIS.org";
-my $background = "banner_large_3.44.8.bmp";
+my $background = "banner_large_3.44.bmp";
 my $banner = "banner_small.bmp";
 my $arpicon;
 
