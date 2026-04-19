@@ -28,10 +28,10 @@ my $ug = Data::UUID->new;
 my $keep = 0;
 my $verbose = 0;
 
-my $packagename = "QGIS";
+my $packagename = "QUICKGIS";
 my $installername;
 my $releasename;
-my $shortname = "qgis";
+my $shortname = "quickgis";
 my $version;
 my $binary;
 my $root = "http://download.osgeo.org/osgeo4w/v2";
@@ -40,7 +40,7 @@ my $smctl_kpa;
 my $signwith;
 my $signpass;
 my $help;
-my $manufacturer = "QGIS.org";
+my $manufacturer = "QUICKGIS.org";
 my $background;
 my $banner;
 my $arpicon;
@@ -228,7 +228,7 @@ sub getuuid {
 
 unless(@ARGV) {
 	print "Defaulting to qgis-full package...\n" if $verbose;
-	push @ARGV, "qgis-full";
+	push @ARGV, "qgis-ltr-full";
 }
 
 ($version) = $version{$ARGV[0]} =~ /^(\d+\.\d+\.\d+)-/ unless defined $version;
@@ -299,8 +299,8 @@ chdir "..";
 
 if( -d "unpacked" ) {
 	unless( $keep ) {
-		print "Removing unpacked directory\n" if $verbose;
-		system "rm -rf unpacked";
+#		print "Removing unpacked directory\n" if $verbose;
+#		system "rm -rf unpacked";
 		die "removal of unpacked failed" if $?;
 	} else {
 		print "Keeping unpacked directory\n" if $verbose;
