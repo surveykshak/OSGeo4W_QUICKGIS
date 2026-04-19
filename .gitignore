@@ -1,3 +1,9 @@
 temp
-scripts\tmp
-scripts/tmp
+scripts/tmp/packages
+scripts/tmp/unpacked/apps
+scripts/tmp/unpacked/bin
+scripts/tmp/unpacked/doc
+scripts/tmp/unpacked/lib
+scripts/tmp/unpacked/share
+scripts/tmp/unpacked/etc/setup
+scripts/tmp/unpacked/etc/ini
